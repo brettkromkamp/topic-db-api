@@ -10,4 +10,4 @@ config.read(SETTINGS_FILE_PATH)
 
 
 def get_store(database_path=config["TOPICSTORE"]["DatabasePath"]):
-    return TopicStore("/home/brettk/Source/structured-knowledge/contextualise/instance/contextualise.db")
+    return TopicStore(database_path)
